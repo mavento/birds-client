@@ -1,0 +1,52 @@
+[
+  {
+    "imagePath": "assets/sample-data/bird1.jpg",
+    "name": "Bird #1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird2.jpg",
+    "name": "Bird #2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird3.jpg",
+    "name": "Bird #3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird4.jpg",
+    "name": "Bird #4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird5.jpg",
+    "name": "Bird #5",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird6.jpg",
+    "name": "Bird #6",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird7.jpg",
+    "name": "Bird #7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird8.jpg",
+    "name": "Bird #8",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird9.jpg",
+    "name": "Bird #9",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  },
+  {
+    "imagePath": "assets/sample-data/bird10.jpg",
+    "name": "Bird #10",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, illum."
+  }
+]

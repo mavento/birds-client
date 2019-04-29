@@ -1,0 +1,17 @@
+<div class="home">
+  <mat-tab-group>
+    <mat-tab label="ALL">
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let bird of birds">
+          <div class="bird-container">
+            <div class="bird" [ngStyle]="{'background-image':'url(' + bird.imagePath + ')'}">
+            </div>
+          </div>
+
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-tab>
+    <mat-tab label="POPULAR"> Content 2 </mat-tab>
+    <mat-tab label="NEW"> Content 3 </mat-tab>
+  </mat-tab-group>
+</div>

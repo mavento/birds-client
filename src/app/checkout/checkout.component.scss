@@ -1,0 +1,19 @@
+@import '../../styles';
+
+.checkout {
+  background-color: mat-color($mat-grey, 100);
+  width: 600px;
+  margin: auto;
+
+  mat-card {
+    margin: auto;
+  }
+
+  form {
+    padding: 8px;
+
+    mat-form-field, mat-select {
+      width: 100%;
+    }
+  }
+}

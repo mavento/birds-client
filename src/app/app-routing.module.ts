@@ -2,10 +2,12 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 import {CheckoutComponent} from "./checkout/checkout.component";
+import {CouponComponent} from "./coupon/coupon.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'coupon', component: CouponComponent},
   {path: 'checkout', component: CheckoutComponent}
 ];
 

@@ -9,12 +9,14 @@ import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HomeComponent} from './home/home.component';
 import {CheckoutComponent} from './checkout/checkout.component';
+import { CouponComponent } from './coupon/coupon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CouponComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+@import "../styles";
+
+.mat-sidenav-container {
+  .mat-toolbar {
+    padding: 0px;
+    height: 10px;
+    //.mat-toolbar-row {
+    //  height: inherit;
+      background: mat-color($birds-app-primary,500);
+    //}
+  }
+}
+
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+

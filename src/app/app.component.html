@@ -1,18 +1,35 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side">Sidenav</mat-sidenav>
+  <mat-sidenav #sidenav mode="side">
+    <mat-list>
+      <mat-list-item> Pepper </mat-list-item>
+      <mat-list-item> Salt </mat-list-item>
+      <mat-list-item> Paprika </mat-list-item>
+    </mat-list>
+
+  </mat-sidenav>
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span>Birds</span>
       <span class="nav-spacer"></span>
-      <button mat-button routerLink="/">home</button>
-      <button mat-button routerLink="/coupon">coupon</button>
-      <button mat-button routerLink="/checkout">checkout</button>
-      <button mat-button>help</button>
+      <button mat-button matTooltip="Home" routerLink="/">
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-button matTooltip="Coupon" routerLink="/coupon">
+        <mat-icon>receipt</mat-icon>
+      </button>
+      <button mat-button matTooltip="Checkout" routerLink="/checkout">
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon matTooltip="Help">help</mat-icon>
+      </button>
     </mat-toolbar-row>
-
-
+    <mat-toolbar-row>
+      <button mat-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar-row>
   </mat-toolbar>
-  <button mat-button (click)="sidenav.toggle()">menu</button>
   <div class="container">
     <router-outlet></router-outlet>
   </div>

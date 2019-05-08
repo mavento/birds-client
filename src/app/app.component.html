@@ -1,9 +1,26 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="side">
     <mat-list>
-      <mat-list-item> Pepper </mat-list-item>
-      <mat-list-item> Salt </mat-list-item>
-      <mat-list-item> Paprika </mat-list-item>
+      <mat-list-item>
+        <button mat-button matTooltip="Home" routerLink="/">
+          <mat-icon>home</mat-icon> Home
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button matTooltip="Coupon" routerLink="/coupon">
+          <mat-icon>receipt</mat-icon> Coupon
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button matTooltip="Checkout" routerLink="/checkout">
+          <mat-icon>shopping_cart</mat-icon> Checkout
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button>
+          <mat-icon matTooltip="Help">help</mat-icon> Help
+        </button>
+      </mat-list-item>
     </mat-list>
 
   </mat-sidenav>

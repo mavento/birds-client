@@ -10,13 +10,15 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HomeComponent} from './home/home.component';
 import {CheckoutComponent} from './checkout/checkout.component';
 import { CouponComponent } from './coupon/coupon.component';
+import { CouponDialogComponent } from './coupon-dialog/coupon-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CheckoutComponent,
-    CouponComponent
+    CouponComponent,
+    CouponDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,8 @@ import { CouponComponent } from './coupon/coupon.component';
     FormsModule,
   ],
   providers: [],
+  entryComponents:[CouponDialogComponent],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

@@ -6,14 +6,14 @@ import {
   MatDialogModule,
   MatGridListModule,
   MatIconModule,
-  MatInputModule,
+  MatInputModule, MatListModule,
   MatMenuModule,
   MatProgressSpinnerModule,
   MatSelectModule,
-  MatSidenavModule,
+  MatSidenavModule, MatSnackBar, MatSnackBarModule,
   MatTableModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule, MatTooltipModule
 } from '@angular/material';
 
 @NgModule({
@@ -31,6 +31,9 @@ import {
     MatSidenavModule,
     MatGridListModule,
     MatTabsModule,
+    MatSnackBarModule,
+    MatTooltipModule,
+    MatListModule,
     MatSelectModule
   ],
   exports: [
@@ -47,6 +50,9 @@ import {
     MatSidenavModule,
     MatGridListModule,
     MatTabsModule,
+    MatSnackBarModule,
+    MatTooltipModule,
+    MatListModule,
     MatSelectModule
   ],
 })

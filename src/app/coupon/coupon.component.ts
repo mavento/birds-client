@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MatDialog} from "@angular/material";
+import {CouponDialogComponent} from "../coupon-dialog/coupon-dialog.component";
 
 @Component({
   selector: 'app-coupon',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CouponComponent implements OnInit {
 
-  constructor() { }
+  constructor(private matDialog: MatDialog) {
+
+  }
 
   ngOnInit() {
   }
 
+  onOpenDialog() {
+    this.matDialog.open(CouponDialogComponent)
+  }
 }

@@ -2,12 +2,23 @@
 
 .mat-sidenav-container {
   .mat-toolbar {
-    padding: 0px;
-    height: 10px;
-    //.mat-toolbar-row {
-    //  height: inherit;
-      background: mat-color($birds-app-primary,500);
-    //}
+    //padding: 0px;
+    //height: 10px;
+
+    .mat-toolbar-row:first-of-type {
+      background: mat-color($birds-app-primary, 700);
+    }
+
+    .mat-toolbar-row:last-of-type {
+      background: mat-color($birds-app-primary, 300);
+    }
+
+    button {
+      color: white;
+      width: 60px;
+      padding: inherit;
+      min-width: inherit;
+    }
   }
 }
 

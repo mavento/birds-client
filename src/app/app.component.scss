@@ -1,9 +1,9 @@
 @import "../styles";
 
 .mat-sidenav-container {
+
+    @include angular-material-theme($dark-theme);
   .mat-toolbar {
-    //padding: 0px;
-    //height: 10px;
 
     .mat-toolbar-row:first-of-type {
       background: mat-color($birds-app-primary, 700);
@@ -20,6 +20,13 @@
       min-width: inherit;
     }
   }
+}
+
+.container{
+  width: 800px;
+  margin: auto;
+  position: relative;
+  top: -40px;
 }
 
 

@@ -3,27 +3,31 @@
     <mat-list>
       <mat-list-item>
         <button mat-button matTooltip="Home" routerLink="/">
-          <mat-icon>home</mat-icon> Home
+          <mat-icon>home</mat-icon>
+          Home
         </button>
       </mat-list-item>
       <mat-list-item>
         <button mat-button matTooltip="Coupon" routerLink="/coupon">
-          <mat-icon>receipt</mat-icon> Coupon
+          <mat-icon>receipt</mat-icon>
+          Coupon
         </button>
       </mat-list-item>
       <mat-list-item>
         <button mat-button matTooltip="Checkout" routerLink="/checkout">
-          <mat-icon>shopping_cart</mat-icon> Checkout
+          <mat-icon>shopping_cart</mat-icon>
+          Checkout
         </button>
       </mat-list-item>
       <mat-list-item>
         <button mat-button>
-          <mat-icon matTooltip="Help">help</mat-icon> Help
+          <mat-icon matTooltip="Help">help</mat-icon>
+          Help
         </button>
       </mat-list-item>
     </mat-list>
-
   </mat-sidenav>
+
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <span>Birds</span>
@@ -40,6 +44,8 @@
       <button mat-button>
         <mat-icon matTooltip="Help">help</mat-icon>
       </button>
+      <button mat-button *ngIf="!isSignedIn()" routerLink="/login">Login</button>
+      <button mat-button *ngIf="isSignedIn()" (click)="logout()">Logout</button>
     </mat-toolbar-row>
     <mat-toolbar-row>
       <button mat-button (click)="sidenav.toggle()">

@@ -11,6 +11,7 @@ import {HomeComponent} from './home/home.component';
 import {CheckoutComponent} from './checkout/checkout.component';
 import { CouponComponent } from './coupon/coupon.component';
 import { CouponDialogComponent } from './coupon-dialog/coupon-dialog.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CouponDialogComponent } from './coupon-dialog/coupon-dialog.component';
     HomeComponent,
     CheckoutComponent,
     CouponComponent,
-    CouponDialogComponent
+    CouponDialogComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

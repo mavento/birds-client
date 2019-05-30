@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {MaterialModule} from "./_core/MaterialModule";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HomeComponent} from './home/home.component';
@@ -12,6 +12,8 @@ import {CheckoutComponent} from './checkout/checkout.component';
 import { CouponComponent } from './coupon/coupon.component';
 import { CouponDialogComponent } from './coupon-dialog/coupon-dialog.component';
 import { LoginComponent } from './login/login.component';
+import {JwtInterceptor} from "./_helpers/jwt.interceptor";
+import {ErrorInterceptor} from "./_helpers/error.interceptor";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
+    {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true}
+  ],
   entryComponents:[CouponDialogComponent],
   bootstrap: [AppComponent]
 
